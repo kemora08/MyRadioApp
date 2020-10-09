@@ -8,16 +8,16 @@ import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { ApiAuthorizationModule } from 'src/api-authorization/api-authorization.module';
-import { AuthorizeGuard } from 'src/api-authorization/authorize.guard';
 import { AuthorizeInterceptor } from 'src/api-authorization/authorize.interceptor';
-
+import { MyRadioAppComponent} from './myradioapp/myradioapp.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavMenuComponent,
-    HomeComponent
+    HomeComponent,
+    MyRadioAppComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
