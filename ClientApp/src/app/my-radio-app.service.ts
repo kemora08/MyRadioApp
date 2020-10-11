@@ -10,7 +10,7 @@ export class MyRadioAppService {
               @Inject('BASE_URL')private baseURL: string) { }
 
   public async getMyRadioApps(): Promise<IRadioStation[]> {
-    return this.httpClient.get<IRadioStation[]>(`@{this.baseURL}MyRadioApp`).toPromise();
+    return this.httpClient.get<IRadioStation[]>(`${this.baseURL}MyRadioApp`).toPromise();
   }
 
   public async addMyRadioApp(MyRadioApps) {

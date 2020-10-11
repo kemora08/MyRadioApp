@@ -15,6 +15,8 @@ namespace capstone.Models
         public string Frequency { get; set; }
         public string CallSign { get; set; }
         public string Genre { get; set; }
+        public int Rating { get; set; }
+        public string Review { get; set; }
         public string UserId { get; set; }
         public ApplicationUser User { get; set; }
     }

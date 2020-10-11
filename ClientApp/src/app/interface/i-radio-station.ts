@@ -1,6 +1,8 @@
 export interface IRadioStation {
     id?: number;
-    Frequency: string;
-    CallSign: string;
-    Genre: string;
+    frequency: string;
+    callSign: string;
+    genre: string;
+    rating: number;
+    review: string;
 }

@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { ApiAuthorizationModule } from 'src/api-authorization/api-authorization.module';
 import { AuthorizeInterceptor } from 'src/api-authorization/authorize.interceptor';
 import { MyRadioAppComponent } from './my-radio-app/my-radio-app.component';
+import { AuthorizeGuard } from 'src/api-authorization/authorize.guard';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { MyRadioAppComponent } from './my-radio-app/my-radio-app.component';
     ApiAuthorizationModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'myradioapp', component: MyRadioAppComponent }
+      { path: 'myradioapp', component: MyRadioAppComponent, canActivate: [AuthorizeGuard] }
+
     ])
   ],
   providers: [

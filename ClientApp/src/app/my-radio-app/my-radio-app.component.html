@@ -1,3 +1,40 @@
 <h1 id="tableLable">MyRadioApp</h1>
 
-<p *ngIf="!MyRadioApp"><em>loading...</em></p>
+<p *ngIf="!MyRadioApps"><em>loading...</em></p>
+
+<table class ="table table-stripped" *ngIf="MyRadioApps">
+  <thead>
+      <tr>
+          <th>Id</th>
+          <th>Frequency</th>
+          <th>CallSign</th>
+          <th>Genre</th>
+          <th>Review</th>
+          <th>Rating</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let s of MyRadioApps">
+          <td>{{ s.id }}</td>
+          <td>{{ s.frequency }}</td>
+          <td>{{ s.callSign }}</td>
+          <td>{{ s.genre }}</td>
+          <td>{{ s.review }}</td>
+          <td>{{ s.rating }}</td>
+      </tr>
+      
+  </tbody>
+</table>
+<div>
+    Frequency
+    <input [(ngModel)]="newMyRadioApp.frequency" name="Frequency"/>
+    CallSign
+    <input [(ngModel)]="newMyRadioApp.callSign" name="CallSign"/>
+    Genre
+    <input [(ngModel)]="newMyRadioApp.genre" name="Genre"/>
+    Review
+    <input [(ngModel)]="newMyRadioApp.review" name="Review"/>
+    Rating
+    <input [(ngModel)]="newMyRadioApp.rating" name="Rating"/>
+    <button (click)="save()">Save</button>
+</div>
