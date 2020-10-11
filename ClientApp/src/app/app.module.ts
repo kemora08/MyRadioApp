@@ -9,7 +9,7 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { ApiAuthorizationModule } from 'src/api-authorization/api-authorization.module';
 import { AuthorizeInterceptor } from 'src/api-authorization/authorize.interceptor';
-import { MyRadioAppComponent} from './myradioapp/myradioapp.component';
+import { MyRadioAppComponent } from './my-radio-app/my-radio-app.component';
 
 
 @NgModule({
@@ -17,7 +17,8 @@ import { MyRadioAppComponent} from './myradioapp/myradioapp.component';
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    MyRadioAppComponent
+    MyRadioAppComponent,
+
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -26,6 +27,7 @@ import { MyRadioAppComponent} from './myradioapp/myradioapp.component';
     ApiAuthorizationModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'myradioapp', component: MyRadioAppComponent }
     ])
   ],
   providers: [
