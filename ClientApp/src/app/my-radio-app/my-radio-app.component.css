@@ -4,3 +4,9 @@ img {
     height:40px;
 }
 
+ul {
+    display: flex;
+    flex-direction: row ;
+}
+
+
