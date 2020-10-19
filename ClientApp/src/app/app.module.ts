@@ -28,7 +28,7 @@ import { AuthorizeGuard } from 'src/api-authorization/authorize.guard';
     ApiAuthorizationModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'myradioapp', component: MyRadioAppComponent, canActivate: [AuthorizeGuard] }
+      { path: 'myradio', component: MyRadioAppComponent, canActivate: [AuthorizeGuard] }
 
     ])
   ],

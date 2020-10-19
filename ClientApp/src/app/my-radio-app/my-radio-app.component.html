@@ -1,9 +1,9 @@
-<div>
+<div class="container radio">
     <h1 id="tableLable">MyRadioApp</h1>
 
     <p *ngIf="!MyRadioApps"><em>loading...</em></p>
     
-    <table class ="table table-stripped" *ngIf="MyRadioApps">
+    <table class="table table-stripped" *ngIf="MyRadioApps">
       <thead>
           <tr>
               <th>Id</th>
@@ -28,23 +28,26 @@
     <div>
         Frequency
         <input [(ngModel)]="newMyRadioApp.frequency" name="Frequency"/>
-        CallSign
+         CallSign
         <input [(ngModel)]="newMyRadioApp.callSign" name="CallSign"/>
-        Genre
+         Genre
         <input [(ngModel)]="newMyRadioApp.genre" name="Genre"/>
-        Review
+         Review
         <input [(ngModel)]="newMyRadioApp.review" name="Review"/>
-        Rating
-        <input [(ngModel)]="newMyRadioApp.rating" name="Rating"/>
+        <br/>Rating
+        <input type="number" [(ngModel)]="newMyRadioApp.rating" name="Rating"/>
         <button (click)="save()">Save</button>
     </div>
     
-    
+    <h2>Links to Lubbock Best Radio Station Apps</h2>
     <ul class="social icons">
-        <li><a href="https://www.klll.com/"><img src='https://upload.wikimedia.org/wikipedia/en/5/50/KLLL_KLLL96.3_logo.png'/></a></li>
-        <li><a href="https://www.1049thebeat.com/"><img src='https://upload.wikimedia.org/wikipedia/commons/c/c0/KBTE_104.9theBeat_logo.png'/></a></li>
-        <li><a href="https://www.937theeagle.com/"><img src='https://upload.wikimedia.org/wikipedia/en/5/54/KLBB_93.7TheEagle_logo.jpg'/></a></li>
-        <li><a href="https://www.magic1065.com/"><img src='https://upload.wikimedia.org/wikipedia/en/0/06/KXTQ_Magic106.5_logo.jpg'/></a></li>
-        <li><a href="https://www.doublet973.com/"><img src='https://upload.wikimedia.org/wikipedia/en/8/85/KTTU_DoubleT97.3_logo.jpg'/></a></li>
+        <li><a href="https://www.klll.com/tag/app/" target="_blank"><img src='https://upload.wikimedia.org/wikipedia/en/5/50/KLLL_KLLL96.3_logo.png'/></a></li>
+        <li><a href="https://www.1049thebeat.com/" target="_blank"><img src='https://upload.wikimedia.org/wikipedia/commons/c/c0/KBTE_104.9theBeat_logo.png'/></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.commotion.KLBB" target="_blank"><img src='https://upload.wikimedia.org/wikipedia/en/5/54/KLBB_93.7TheEagle_logo.jpg'/></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.commotion.ktxq&hl=en_US&gl=US" target=_blank><img src='https://upload.wikimedia.org/wikipedia/en/0/06/KXTQ_Magic106.5_logo.jpg'/></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.commotion.kttu" target="_blank"><img src='https://upload.wikimedia.org/wikipedia/en/8/85/KTTU_DoubleT97.3_logo.jpg'/></a></li>
     </ul>
+    <h1>Play Store Apps</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Download_on_iTunes.svg">
 </div>

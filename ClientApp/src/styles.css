@@ -20,6 +20,26 @@ body {
   background-color: white;
 }
 
+.radio {
+background-color: rgb(220, 233, 223);
+}
+
+.container {
+  background-color: rgb(191, 197, 199);
+}
+
+img {
+  text-align:center;
+  width: 50px;
+  height: 50px;
+}
+
+image {
+  text-align: right;
+  width: 50px;
+  height: 50px;
+}
+
 
 
 
