@@ -1,50 +1,50 @@
-<h1 id="tableLable">MyRadioApp</h1>
-
-<p *ngIf="!MyRadioApps"><em>loading...</em></p>
-
-<table class ="table table-stripped" *ngIf="MyRadioApps">
-  <thead>
-      <tr>
-          <th>Id</th>
-          <th>Frequency</th>
-          <th>CallSign</th>
-          <th>Genre</th>
-          <th>Review</th>
-          <th>Rating</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr *ngFor="let s of MyRadioApps">
-          <td>{{ s.id }}</td>
-          <td>{{ s.frequency }}</td>
-          <td>{{ s.callSign }}</td>
-          <td>{{ s.genre }}</td>
-          <td>{{ s.review }}</td>
-          <td>{{ s.rating }}</td>
-      </tr>
-  </tbody>
-</table>
 <div>
-    Frequency
-    <input [(ngModel)]="newMyRadioApp.frequency" name="Frequency"/>
-    CallSign
-    <input [(ngModel)]="newMyRadioApp.callSign" name="CallSign"/>
-    Genre
-    <input [(ngModel)]="newMyRadioApp.genre" name="Genre"/>
-    Review
-    <input [(ngModel)]="newMyRadioApp.review" name="Review"/>
-    Rating
-    <input [(ngModel)]="newMyRadioApp.rating" name="Rating"/>
-    <button (click)="save()">Save</button>
+    <h1 id="tableLable">MyRadioApp</h1>
+
+    <p *ngIf="!MyRadioApps"><em>loading...</em></p>
+    
+    <table class ="table table-stripped" *ngIf="MyRadioApps">
+      <thead>
+          <tr>
+              <th>Id</th>
+              <th>Frequency</th>
+              <th>CallSign</th>
+              <th>Genre</th>
+              <th>Review</th>
+              <th>Rating</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let s of MyRadioApps">
+              <td>{{ s.id }}</td>
+              <td>{{ s.frequency }}</td>
+              <td>{{ s.callSign }}</td>
+              <td>{{ s.genre }}</td>
+              <td>{{ s.review }}</td>
+              <td>{{ s.rating }}</td>
+          </tr>
+      </tbody>
+    </table>
+    <div>
+        Frequency
+        <input [(ngModel)]="newMyRadioApp.frequency" name="Frequency"/>
+        CallSign
+        <input [(ngModel)]="newMyRadioApp.callSign" name="CallSign"/>
+        Genre
+        <input [(ngModel)]="newMyRadioApp.genre" name="Genre"/>
+        Review
+        <input [(ngModel)]="newMyRadioApp.review" name="Review"/>
+        Rating
+        <input [(ngModel)]="newMyRadioApp.rating" name="Rating"/>
+        <button (click)="save()">Save</button>
+    </div>
+    
+    
+    <ul class="social icons">
+        <li><a href="https://www.klll.com/"><img src='https://upload.wikimedia.org/wikipedia/en/5/50/KLLL_KLLL96.3_logo.png'/></a></li>
+        <li><a href="https://www.1049thebeat.com/"><img src='https://upload.wikimedia.org/wikipedia/commons/c/c0/KBTE_104.9theBeat_logo.png'/></a></li>
+        <li><a href="https://www.937theeagle.com/"><img src='https://upload.wikimedia.org/wikipedia/en/5/54/KLBB_93.7TheEagle_logo.jpg'/></a></li>
+        <li><a href="https://www.magic1065.com/"><img src='https://upload.wikimedia.org/wikipedia/en/0/06/KXTQ_Magic106.5_logo.jpg'/></a></li>
+        <li><a href="https://www.doublet973.com/"><img src='https://upload.wikimedia.org/wikipedia/en/8/85/KTTU_DoubleT97.3_logo.jpg'/></a></li>
+    </ul>
 </div>
-
-
-<ul class="social icons">
-    <li><a href="https://www.klll.com/"><img src='https://upload.wikimedia.org/wikipedia/en/5/50/KLLL_KLLL96.3_logo.png'/></a></li>
-    <li><a href="https://www.1049thebeat.com/"><img src='https://upload.wikimedia.org/wikipedia/en/c/c0/KBTE_104.9theBeat_logo.png'/></a></li>
-    <li><a href="https://www.937theeagle.com/"><img src='https://upload.wikimedia.org/wikipedia/en/5/54/KLBB_93.7TheEagle_logo.jpg'/></a></li>
-    <li><a href="https://www.magic1065.com/"><img src='https://upload.wikimedia.org/wikipedia/en/0/06/KXTQ_Magic106.5_logo.jpg'/></a></li>
-</ul>
-
-
-
