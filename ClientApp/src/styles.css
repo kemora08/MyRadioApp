@@ -40,6 +40,20 @@ image {
   height: 50px;
 }
 
+.storelinks {
+  text-align: right;
+  width: 80px;
+  height: 80px;
+}
+
+.social {
+  display: flex;
+}
+
+.social li {
+ list-style: none;
+}
+
 
 
 
