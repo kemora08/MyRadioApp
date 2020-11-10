@@ -6,7 +6,6 @@
     <table class="table table-stripped" *ngIf="MyRadioApps">
       <thead>
           <tr>
-              <th>Id</th>
               <th>Frequency</th>
               <th>CallSign</th>
               <th>Genre</th>
@@ -16,7 +15,6 @@
       </thead>
       <tbody>
           <tr *ngFor="let s of MyRadioApps">
-              <td>{{ s.id }}</td>
               <td>{{ s.frequency }}</td>
               <td>{{ s.callSign }}</td>
               <td>{{ s.genre }}</td>
